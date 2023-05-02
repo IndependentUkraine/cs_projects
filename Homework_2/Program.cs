@@ -29,19 +29,19 @@ namespace Homework_2
 
         static void Main(string[] args)
         {
-            ////Task 1
-            //float number1 = Convert.ToSingle(Console.ReadLine());
-            //IsInRange(number1);
-            //float number2 = Convert.ToSingle(Console.ReadLine());
-            //IsInRange(number2);
-            //float number3 = Convert.ToSingle(Console.ReadLine());
-            //IsInRange(number3);
+            //Task 1
+            float number1 = Convert.ToSingle(Console.ReadLine());
+            IsInRange(number1);
+            float number2 = Convert.ToSingle(Console.ReadLine());
+            IsInRange(number2);
+            float number3 = Convert.ToSingle(Console.ReadLine());
+            IsInRange(number3);
 
-            ////Task 2
-            //int number4 = Convert.ToInt32(Console.ReadLine());
-            //int number5 = Convert.ToInt32(Console.ReadLine());
-            //int number6 = Convert.ToInt32(Console.ReadLine());
-            //FindMaxAndMin(number4, number5, number6);
+            //Task 2
+            int number4 = Convert.ToInt32(Console.ReadLine());
+            int number5 = Convert.ToInt32(Console.ReadLine());
+            int number6 = Convert.ToInt32(Console.ReadLine());
+            FindMaxAndMin(number4, number5, number6);
 
             //Task 3
             HTTPError error = Enum.Parse<HTTPError>(Console.ReadLine());
