@@ -77,6 +77,6 @@ namespace Homework_2
 
             Console.WriteLine(dog.ToString());
 
-        }
+    }
     }
 }
