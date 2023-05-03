@@ -20,6 +20,14 @@
 
             Console.WriteLine($"a: {amount_A}, o: {amount_O}" +
                 $" i: {amount_I}, e: {amount_E}");
+
+            //Task 2
+
+            Console.Write("Enter the number of month: ");
+            int number = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine($"Count of days: " +
+                $"{DateTime.DaysInMonth(DateTime.Now.Year, number)}");
+
         }
     }
 }
