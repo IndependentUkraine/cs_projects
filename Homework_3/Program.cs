@@ -11,9 +11,9 @@
             string str = Console.ReadLine();
 
             foreach (char c in str.ToLower())
-            { 
-                if(c == 'a') amount_A++;
-                else if(c == 'o') amount_O++;
+            {
+                if (c == 'a') amount_A++;
+                else if (c == 'o') amount_O++;
                 else if (c == 'i') amount_I++;
                 else if (c == 'e') amount_E++;
             }
@@ -27,6 +27,37 @@
             int number = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine($"Count of days: " +
                 $"{DateTime.DaysInMonth(DateTime.Now.Year, number)}");
+
+            //Task 3
+            int arraySize = 10;
+            int[] numbers = new int[arraySize];
+
+            for(int i = 0; i < arraySize; i++)
+            {
+                Console.Write("Enter number: ");
+                numbers[i] = Convert.ToInt32(Console.ReadLine());
+            }
+
+            bool isNegative = false;
+
+            for (int i = 0; i < 5; i++)
+                if (numbers[i] < 0)
+                    isNegative = true;
+
+            if (isNegative)
+            {
+                int product = 1;
+                for (int i = 5; i < arraySize; i++)
+                    product *= numbers[i];
+                Console.WriteLine($"Product: {product}");
+            }
+            else
+            {
+                int sum = 0;
+                for (int i = 0; i < 5; i++)
+                    sum += numbers[i];
+                Console.WriteLine($"Sum: {sum}");
+            }
 
         }
     }
