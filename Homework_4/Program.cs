@@ -75,7 +75,7 @@ namespace Homework_4
 
             Console.WriteLine("--------------------------");
 
-            foreach(Person person in persons)
+            foreach (Person person in persons)
             {
                 int count = 0;
                 foreach (Person person2 in persons)
@@ -83,12 +83,12 @@ namespace Homework_4
                     if (person == person2)
                     {
                         count++;
-                        if(person.BirthYear != person2.BirthYear)
-                        Console.WriteLine($"{person} namesake ==> {person2}");
+                        if (person.BirthYear != person2.BirthYear)
+                            Console.WriteLine($"{person} namesake ==> {person2}");
                     }
                 }
 
-                if(count == 1)
+                if (count == 1)
                     Console.WriteLine($"{person} has no namesakes");
             }
 
